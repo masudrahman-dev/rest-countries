@@ -1,9 +1,9 @@
 const spinner = (isSpinner) => {
   if (isSpinner) {
-    console.log(isSpinner);
+    // console.log(isSpinner);
     document.getElementById('spinner').classList.remove('hidden');
   } else {
-    console.log(isSpinner);
+    // console.log(isSpinner);
     document.getElementById('spinner').classList.add('hidden');
   }
 };
@@ -43,9 +43,11 @@ const countriesHTML = ({
   maps,
 }) => {
   return `
-      <div class="card w-96 bg-base-100 shadow-xl">
-      <figure><img src="${flags.png}" alt="${flags.alt}" /></figure>
-      <div class="card-body">
+      <div class="card w-96 bg-base-100 shadow-xl ">
+      <figure ><img class="border"  src="${flags.png}" alt="${
+    flags.alt
+  }" /></figure>
+      <div class="card-body ">
           <h2 class="card-title">
               ${name.common} 
           </h2>
