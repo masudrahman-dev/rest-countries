@@ -43,10 +43,10 @@ const countriesHTML = ({
   maps,
 }) => {
   return `
-      <div class="card w-96 bg-base-100 shadow-xl ">
-      <figure ><img class="border-2 dark:border-0"  src="${flags.png}" alt="${
-    flags.alt
-  }" /></figure>
+      <div class="card  bg-base-100 shadow-xl ">
+      <figure ><img class="border-2 h-32 dark:border-0"  src="${
+        flags.png
+      }" alt="${flags.alt}" /></figure>
       <div class="card-body ">
           <h2 class="card-title">
               ${name.common} 
