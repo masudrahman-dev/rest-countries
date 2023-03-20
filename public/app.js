@@ -44,7 +44,7 @@ const countriesHTML = ({
 }) => {
   return `
       <div class="card w-96 bg-base-100 shadow-xl ">
-      <figure ><img class="border"  src="${flags.png}" alt="${
+      <figure ><img class="border-2 dark:border-0"  src="${flags.png}" alt="${
     flags.alt
   }" /></figure>
       <div class="card-body ">
