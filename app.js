@@ -9,7 +9,7 @@ const getData = () => {
 const displayCountries = (data) => {
   // console.log(data);
   const countries_container = document.getElementById('countries_container');
-  data.slice(0, 9).forEach((country) => {
+  data.forEach((country) => {
     // const { flags, capital, name, population, languages, independent, maps } =
     //   country;
 
