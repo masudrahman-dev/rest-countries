@@ -1,10 +1,20 @@
+const spinner = (isSpinner) => {
+  if (isSpinner) {
+    console.log(isSpinner);
+    document.getElementById('spinner').classList.remove('hidden');
+  } else {
+    console.log(isSpinner);
+    document.getElementById('spinner').classList.add('hidden');
+  }
+};
+
 const getData = () => {
+  spinner(true);
   fetch('https://restcountries.com/v3.1/all')
     .then((res) => res.json())
     .then((data) => {
-      //   spinner(true);
+      spinner(false);
       displayCountries(data);
-      //   spinner(false);
     })
     .catch((error) => {
       console.log('Error fetching data:', error);
@@ -56,12 +66,3 @@ const countriesHTML = ({
 };
 
 getData();
-
-function spinner(isSpinner) {
-  if (isSpinner) {
-    // console.log(isSpinner);
-    document.getElementById('spinner').classList.remove('hidden');
-  } else {
-    document.getElementById('spinner').classList.add('hidden');
-  }
-}
